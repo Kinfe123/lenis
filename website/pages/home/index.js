@@ -14,6 +14,7 @@ import { clamp, mapRange } from 'lib/maths'
 import { useStore } from 'lib/store'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
+import More from 'components/more'
 import { useIntersection, useWindowSize } from 'react-use'
 import s from './home.module.scss'
 
@@ -424,6 +425,8 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <More />
         <section ref={featuresRectRef}>
           <FeatureCards />
         </section>
